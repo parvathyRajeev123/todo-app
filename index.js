@@ -13,8 +13,6 @@ app.use(urlencoded({ extended: true }))
 app.post('/', async (req,res)=>{
     res.writeHead(200,{'content-Type':'application/json'});
     let response = {"response": "This is a post Method"};
-    console.log(response);
-    console.log(req.body);
     const _data = req.body.data;
     const _status = req.body.status;
     let createData;
